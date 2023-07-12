@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This page for Rergistration">
+    <meta name="keywords" content="registeration">
+    <meta name="author" content="Amir Famili">
+    <meta name="robots" content="follow, index">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon32.png" sizes="32x32">
+    <link rel="icon" href="images/favicon64.png" sizes="64x64">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="form-box">
+        <div class="btn-box">
+            <div id="btn-color"></div>
+            <button  type="button" onclick="register()">Registeration</button>
+            <button  type="button" onclick="LogIn()">Log In</button>
+        </div>
+        <div id="registration">
+            <form id="form-registration" action="index.html" enctype="multipart/form-data">
+                <h1 id="title">Registration</h1>
+                <hr>
+                <div class="input-control ">
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname" id="fname">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" id="lname">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="15" max="90" value="20">
+                    <div class="error"></div>
+                </div>
+               
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="passworda">Password again</label>
+                    <input type="password" name="passworda" id="passworda">
+                    <div class="error"></div>
+                </div>
+                <button id="submit" type="submit">Sign Up</button>
+
+
+            </form>
+        </div>
+        <div id="log-in">
+            <form id="form-log-in" action="index.html" enctype="multipart/form-data">
+                <h1 id="title">Log In</h1>
+                <hr>
+                <div class="input-control">
+                   
+                    <div class="input-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email-log-in">
+                        <div class="error"></div>
+                    </div>
+               
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password-log-in">
+                    <div class="error"></div>
+                </div>
+               
+                <button id="submit" type="submit">Log In</button>
+
+
+            </form>
+        </div>
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
